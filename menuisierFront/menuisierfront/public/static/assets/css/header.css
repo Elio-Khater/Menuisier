@@ -1,0 +1,69 @@
+/* ===================================
+    16. Header Style
+====================================== */
+#masterhead.site-header{width:100%;padding:0;background-color:transparent;position:absolute;top:0;z-index:999;border-bottom:1px solid rgba(255,255,255,0.1)}
+.site-branding{float:left}
+.site-title{margin:0}
+.site-description{margin:0}
+.site-header .navbar-default{margin:0;background:none;border-radius:0;border:none;min-height:auto}
+.site-header .site-branding{color:#fff;padding:29px 30px;border-right:1px solid rgba(255,255,255,0.1)}
+.site-header .site-branding .site-title a{color:#fff;font-weight:700;text-transform:uppercase}
+.site-header .navbar-default .navbar-nav > li{padding:30px 17px;text-transform:uppercase}
+.site-header .navbar-default .navbar-nav > li:first-child{padding-left:40px}
+.site-header .navbar-default .navbar-nav > li > a{color:#fff;padding:0;font-weight:600;position:relative;padding-left:12px}
+.site-header .navbar-default .navbar-nav > li > a:before{position:absolute;left:0;top:0;font-size:6px;content:"";color:#efaa15;font-family:FontAwesome}
+.site-header .navbar-default .container-fluid{padding:0}
+.site-header .navbar-default .navbar-nav > li > a:hover{color:#efaa15}
+.site-header .navbar-default .navbar-nav > .open > a,.site-header .navbar-default .navbar-nav > .open > a:focus,.site-header .navbar-default .navbar-nav > .open > a:hover,.site-header .dropdown-menu > li > a:focus,.site-header .dropdown-menu > li > a:hover,.site-header .navbar-default .navbar-nav > .active > a,.site-header .navbar-default .navbar-nav > .active > a:focus,.site-header .navbar-default .navbar-nav > .active > a:hover{color:#efaa15;background:none}
+.site-header .dropdown-menu{padding:20px 10px 15px;top:83px;min-width:200px;border-radius:0;box-shadow:none;border:none;left:-53px;background:#efaa15;text-align:center}
+.site-header .dropdown-menu:before{position:absolute;left:0;right:0;top:0;content:'';width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:6px solid #201209;margin:0 auto}
+.site-header .dropdown-menu > li > a{padding:7px 10px;color:#431f09;font-weight:500;text-align:left!important;border-bottom:1px solid #431f09}
+.site-header .dropdown-menu > li:last-child > a{border:none}
+.site-header{position:relative}
+.site-header ul.social-icons li{float:left;border-left:1px solid rgba(255,255,255,0.1)}
+.site-header ul.social-icons li a{padding:0 36px;line-height:82px;color:#efaa15;display:block;font-size:16px}
+.site-header ul.social-icons li a:hover{background:#efaa15;color:#431f09}
+.site-header ul.social-icons{margin:0;list-style:none;padding:0;position:absolute;right:0;top:0}
+.site-header .dropdown-menu > li > a:hover{background:#431f09;color:#efaa15}
+.site-header .navbar-default .navbar-nav > li > a .caret{border:none;width:7px;height:10px;background:url(../images/arrow-down.png) no-repeat right top}
+/* ===================================
+    16.1 Header Responsive
+====================================== */
+@media screen and (max-width: 1199px) {
+    #masterhead.site-header{text-align:center;padding:15px 0 0}
+    .site-header .site-branding{padding:0;border-right:none}
+    .site-header .navbar-header{float:none;display:inline-block;vertical-align:top}
+    .site-header .navbar-nav{width:100%}
+    .site-header .navbar-nav > li{float:none;display:inline-block;vertical-align:top}
+    .site-header .dropdown-menu{top:50px}
+    .site-header ul.social-icons{display:none}
+    .site-header .dropdown-menu{top:82px}
+    .site-header .navbar-default .navbar-nav > li:first-child{padding-left:17px}
+}
+@media screen and (max-width: 767px) {
+    #masterhead.site-header{text-align:left;padding:20px 2%}
+    .site-header .navbar-default .navbar-toggle{right:0;border-radius:0;position:absolute;border-color:#efaa15;margin:-3px 0 0;background:#efaa15}
+    .site-header .navbar-default .navbar-toggle .icon-bar{background-color:#fff}
+    .site-header .navbar-default .navbar-toggle:focus,.site-header .navbar-default .navbar-toggle:hover{background-color:#efaa15}
+    .site-header .navbar-default .navbar-toggle:focus .icon-bar,.site-header .navbar-default .navbar-toggle:hover .icon-bar{background-color:#000}
+    .site-header .navbar-default .navbar-collapse,.site-header .navbar-default .navbar-form{border:none;box-shadow:none}
+    .site-header .navbar-nav{margin:0;padding:15px 0;width:100%}
+    .site-header .collapse,.site-header .collapsing{right:0;left:0;top:45px;z-index:99;position:absolute;background-color:#efaa15}
+    .site-header .navbar-default .navbar-nav > li{float:left;width:100%;padding:0;border-bottom:1px solid #431f09}
+    .site-header .navbar-default .navbar-nav > li:first-child{padding-left:0}
+    .site-header .navbar-default .navbar-nav > li > a{color:#000;padding:15px}
+    .site-header .navbar-default .navbar-nav > li:last-child{border-bottom:none}
+    .site-header .navbar-default .navbar-nav > li > .dropdown-menu{padding-top:0}
+    .site-header .navbar-default .navbar-nav .open .dropdown-menu .dropdown-header,.site-header .navbar-default .navbar-nav .open .dropdown-menu > li > a{padding:5px 10px}
+    .site-header .navbar-default .navbar-nav > .open > a,.site-header .navbar-default .navbar-nav > .open > a:focus,.site-header .navbar-default .navbar-nav > .open > a:hover,.site-header .dropdown-menu > li > a:focus,.site-header .dropdown-menu > li > a:hover,.site-header .navbar-default .navbar-nav > .active > a,.site-header .navbar-default .navbar-nav > .active > a:focus,.site-header .navbar-default .navbar-nav > .active > a:hover{background:#431f09}
+    .site-header .navbar-default .navbar-nav > li > a:before{display:none}
+    .site-header .dropdown-menu:before{display:none}
+    .site-header .dropdown-menu{text-align:left;padding:10px 0;left:0}
+    .navbar-nav .open .dropdown-menu>li>a{color:#431f09}
+    .navbar-nav .open .dropdown-menu{padding-top:10px;width:100%;padding-bottom:0}
+    .site-header .site-branding{padding:0 0 0 15px}
+    .site-header .navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav .open .dropdown-menu > li > a{color:#fff}
+    .site-header .navbar-default .navbar-nav > li > .dropdown-menu{padding:10px}
+    .site-header .navbar-default .navbar-nav > li > a .caret{background:url(../images/arrow-down2.png) no-repeat right top}
+    .site-header .navbar-default .navbar-nav > li.dropdown.open > a .caret{background:url(../images/arrow-down.png) no-repeat right top}
+}

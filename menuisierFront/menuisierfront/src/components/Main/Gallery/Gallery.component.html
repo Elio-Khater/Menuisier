@@ -1,0 +1,39 @@
+<div class="content-box padding-top gallery-box text-center padding-bottom" xmlns:v-bind="http://www.w3.org/1999/xhtml"
+     xmlns:v-on="http://www.w3.org/1999/xhtml">
+    <div class="container">
+        <h2 class="brown-text robotoslub-font">Our Latest Work</h2>
+        <div class="otw_portfolio_manager-portfolio-newspaper-filter">
+            <ul class="option-set semibold-font otw_portfolio_manager-portfolio-filter clearfix">
+
+                <li v-for="y in Type"><a class="selected"  v-on:click="getGalleryByType(y.gid)"   >{{y.type}}</a></li>
+            </ul>
+        </div>
+            <div v-for="x in Gallery" style="padding:0% 20%" v-bind:class="'otw_portfolio_manager-2-3 otw_portfolio_manager-iso-item otw_portfolio_manager-portfolio-newspaper-item '">
+                <div class="otw_portfolio_manager-portfolio-full only-media otw_portfolio_manager-hover-effect-1">
+                    <!-- Portfolio Media -->
+                    <figure class="otw_portfolio_manager-portfolio-media otw_portfolio_manager-format-image">
+                        <a href="#"><img v-bind:src="x.url" v-bind:alt="x.info"></a>
+                        <div class="otw_portfolio_manager-portfolio-overlay">
+                            <div class="otw_portfolio_manager-valign-middle">
+                                <div class="otw_portfolio_manager-portfolio-icon-wrapper">
+                                    <a href="#" class="icon-link"><img src="/public/static/assets/images/attached-img.png" alt=""></a>
+                                    <a href="/public/static/assets/images/gallery-img1.jpg"
+                                       class="otw_portfolio_manager-fancybox-img icon-search">
+                                        <img src="/public/static/assets/images/search-img.png" alt=""></a>
+                                </div>
+                                <div class="otw_portfolio_manager-portfolio-text">
+                                    <h3 class="robotoslub-font">Home Renovation<span class="regular-font">WoodArt Work</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Portfolio Overlay -->
+                    </figure>
+                    <!-- End Portfolio Media -->
+                </div>
+            </div>
+        <div class="spacer col-xs-12"></div>
+        <div class="transparent-btn inline-display text-uppercase"><a href="#">VIEW ALL PROJECTS</a></div>
+        <!--container-->
+    </div>
+    <!--content-box-->
+</div>

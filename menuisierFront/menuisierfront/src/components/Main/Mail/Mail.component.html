@@ -1,0 +1,45 @@
+<div class="content-box padding-top" xmlns:v-on="http://www.w3.org/1999/xhtml">
+    <div class="container">
+        <div class="padding-bottom contact-box col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="robotoslub-font brown-text">Get a Free Quote</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+            <aside class="contact-form col-xs-12 no-padding">
+                <div id="form_result"></div>
+
+                    <ul>
+                        <li>
+                            <input name="name" v-model="Mail.name" id="name" type="text" placeholder="Name">
+                        </li>
+                        <li>
+                            <input name="email"  v-model="Mail.email" id="email" type="email" placeholder="Email">
+                        </li>
+                        <li>
+                            <input name="phone" id="phone"  v-model="Mail.phone" type="tel" placeholder="Phone">
+                        </li>
+                        <li>
+                            <select name="Request"  v-model="Mail.request">
+                                <option>Request</option>
+                                <option>Request</option>
+                                <option>Request</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <div class="comment-box">
+                        <textarea name="comments"  v-model="Mail.message" id="comments" placeholder="Message"></textarea>
+                        <!--comment-box-->
+                    </div>
+                    {{response}}
+                    <button class="semibold-font" v-on:click="postMail" >Send Message</button>
+
+                <!--contact-form-->
+            </aside>
+            <!--contact-box-->
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 contact-img">
+            <img src="/public/static/assets/images/contact-img.jpg" alt="">
+            <!--col-->
+        </div>
+        <!--container-->
+    </div>
+    <!--content-box-->
+</div>

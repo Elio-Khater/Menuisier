@@ -1,0 +1,18 @@
+<div class="content-box padding-top text-center padding-bottom" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+    <div class="container">
+        <h2 class="brown-text robotoslub-font">WoodArt Services</h2>
+        <div v-for="s in Services" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+            <aside class="services no-padding col-xs-12">
+                <figure><img v-bind:src="s.image" alt=""></figure>
+                <span class="separator"><img src="../../../../public/static/assets/images/services_single.png" alt=""></span>
+                <h3 class="brown-text robotoslub-font">{{s.title}}</h3>
+                <p>{{s.text}}</p>
+                <!--services-->
+            </aside>
+            <!--col-->
+        </div>
+
+        <!--container-->
+    </div>
+    <!--content-box-->
+</div>

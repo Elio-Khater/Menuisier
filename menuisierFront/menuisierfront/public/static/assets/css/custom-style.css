@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+/* ----------------------------------
+
+Name: custom-style.css
+Version: 1.0
+
+-------------------------------------
+
+Table of contents
+
+    01. Reset
+    02. Banner
+    03. Design
+    04. Plan
+    05. Carousel
+    06. Accordion
+    07. Testimonials
+    08. Partners
+    09. Contact Form
+    10. Support
+    11. Sub Banner
+    12. Breadcrumb
+    13. Custom Style For Other Pages
+    14. Buttons (Path:assets/css/buttons)
+        14.1 Yellow Button
+        14.2 Transparent Button
+    15. Fonts (Path:assets/css/fonts)
+        15.1 Roboto Slab
+        15.2 Poppins
+    16. Header Style (Path:assets/css/header)
+        16.1 Header Responsive
+    17. Footer Style (Path:assets/css/footer)
+        17.1 Footer Responsive
+    18. Typography (Path:assets/css/typography)
+        18.1 Short Code
+        18.2 Progress Bar
+        18.3 Site Map
+        18.4 Testimonial
+        18.5 Faq
+        18.6 Tabs
+        18.7 Accordion
+        18.8 Carousel
+        18.9 Plans
+        18.10 Table
+        18.11 Definition Lists
+    19. Blog (Path:assets/css/blog)
+        19.1 Single Post
+        19.2 Single Post Responsive
+    20. Blog Side Bar (Path:assets/css/blog-sidebar)
+        20.1 Blog Side Bar
+        20.2 Blog Side Bar Responsive
+*/
+
+/* ===================================
+    01. Reset
+====================================== */
+body{margin:0;padding:0;background:repeat-x top #fff;overflow-x:hidden}
+body,select,input{color:#666;font-size:14px;line-height:24px;font-family:'Poppins',sans-serif}
+img{border:none}
+::-moz-selection{color:#fff;background:#000}
+::selection{color:#fff;background:#000}
+figure{margin:0}
+.group:after{content:"";display:table;clear:both}
+a{outline:none;color:#333;text-decoration:none}
+a:hover{outline:none;-webkit-transition:all .6s ease-in-out;-moz-transition:all .6s ease-in-out;-ms-transition:all .6s ease-in-out;-o-transition:all .6s ease-in-out;transition:all .6s ease-in-out;text-decoration:underline}
+/* ===================================
+    02. Banner
+====================================== */
+.banner-con{height:100vh;background:url(../images/banner3.jpg) no-repeat center top;background-size:cover}
+.banner-text{height:100vh;display:table;font-size:18px}
+.banner-text > div{display:table-cell;vertical-align:middle}
+.banner-text h3{margin:0 0 22px}
+.banner-text h1{font-size:60px}
+.banner-text p{margin:30px 0 44px}
+.banner-text .yellow-btn a{padding:20px 32px;font-size:18px}
+#bannerSlider .carousel-control{opacity:1;top:48%}
+#bannerSlider .carousel-control .glyphicon{display:none}
+#bannerSlider .left.carousel-control,#bannerSlider .right.carousel-control{width:46px;height:46px}
+#bannerSlider .left.carousel-control{left:50px}
+#bannerSlider .left.carousel-control .sr-only{left:0}
+#bannerSlider .right.carousel-control{right:50px}
+#bannerSlider .right.carousel-control .sr-only{right:0}
+#bannerSlider .carousel-control .sr-only{width:100%;color:#fff;clip:inherit;height:100%;font-size:10px;line-height:46px;letter-spacing:2px;text-align:center;text-transform:uppercase;border:1px solid #fff}
+#bannerSlider .carousel-control .sr-only:hover{opacity:.7}
+/* ===================================
+    03. Design
+====================================== */
+.content-box{float:left;width:100%}
+.content-box ul,.content-box ol{margin: 0;padding: 0;list-style: none}
+.content-box h2{margin:0 0 25px;font-size:42px;line-height:44px}
+.design{font-size:16px}
+.design h3{margin:35px 0}
+.design .transparent-btn{margin:42px 0 0}
+.design .transparent-btn a,.wood-box .transparent-btn a{padding:20px 40px;font-size:18px}
+/* ===================================
+    04. Plan
+====================================== */
+.plan-con{background:url(../images/services.jpg) no-repeat center top;background-size:cover;background-attachment:fixed}
+.services-box{width:100%;float:left;padding:50px 0;background:#fff}
+.services-fig{width:162px;height:18px;margin:0 auto 28px;background:url(../images/services_single.png) no-repeat center top}
+.services-box h3{margin-top: 0}
+.services-box p{margin:25px 0 30px}
+.services-box:hover{color:#431f09;background-color:#f1b22c}
+.services-box:hover .yellow-btn a{background-color:#431f09}
+.services-box:hover .services-fig{background:url(../images/services_single2.png) no-repeat center top}
+#woodart{margin:65px 0 0;border:none;padding:0}
+/* ===================================
+    05. Carousel
+====================================== */
+#woodart .carousel-control,#testimonials .carousel-control{float:right;width:50%;position:relative}
+#woodart .carousel-control-prev,#testimonials .carousel-control-prev{height:45px;width:45px;bottom:50px;left:15px;position:absolute;background:url(../images/previous_img.png) no-repeat center}
+#woodart .carousel-control-prev:hover{background:url(../images/previous_imghover.png) no-repeat center}
+#woodart .carousel-control-next,#testimonials .carousel-control-next{height:45px;width:45px;bottom:50px;left:75px;position:absolute;background:url(../images/next_img.png) no-repeat center}
+#woodart .carousel-control-next:hover{background:url(../images/next_imghover.png) no-repeat center}
+.art-textbox{line-height:30px;margin:85px 0 0}
+.art-textbox h3{font-size:30px;margin:0 0 25px}
+.carousel-fade .carousel-inner .item{transition-property:opacity}
+.carousel-fade .carousel-inner .item,.carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right{opacity:0}
+.carousel-fade .carousel-inner .active,.carousel-fade .carousel-inner .next.left,.carousel-fade .carousel-inner .prev.right{opacity:1}
+.carousel-fade .carousel-inner .next,.carousel-fade .carousel-inner .prev,.carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right{left:0;transform:translate3d(0,0,0)}
+.carousel-fade .carousel-control{z-index:2}
+/* ===================================
+    06. Accordion
+====================================== */
+.faq-con{background:url(../images/faqs_bg.jpg) no-repeat center top;background-size:cover;background-attachment:fixed}
+#accordion.panel-group{margin:0}
+#accordion.panel-group .panel + .panel{margin:10px 0 0}
+#accordion.panel-group .panel + .panel:first-child{margin:0}
+#accordion.panel-group .panel{border-radius:0;box-shadow:none;text-align:left;border:none;background:none}
+#accordion .panel-default > .panel-heading{padding:0}
+#accordion .panel-title a{display:block;font-size:16px;padding:0 20px;line-height:48px;outline:none;text-decoration:none;color:#431f09;background-color:#efaa15}
+#accordion .panel-title a.collapsed{color:#fff;background-color:#431f09}
+#accordion.panel-group .panel-heading + .panel-collapse > .list-group,#accordion.panel-group .panel-heading + .panel-collapse > .panel-body{border:none}
+#accordion .panel-body{color:#fff;font-size:14px;line-height:22px;padding:20px 22px;border:none;background:rgba(67,31,9,0.5)}
+#accordion .panel-body a{color:#f60}
+.skill-level{color:#fff;font-size:18px;height:210px;display:table;margin:0 0 30px;background:#431f09}
+.skill-level > div{display:table-cell;vertical-align:middle}
+.skill-level .numeric{font-size:42px;line-height:42px;display:block;margin:0 0 20px}
+.skill-level:hover{color:#431f09;background:#efaa15}
+.skill-level:hover .numeric{color:#431f09}
+/* ===================================
+    07. Testimonials
+====================================== */
+#testimonials{margin:50px 0 0;font-size:18px;line-height:30px}
+.client-name{height:160px;display:table;font-size:30px;padding:0 0 0 32px}
+.client-name span{display:table-cell;vertical-align:middle}
+#testimonials p{margin:45px 0 0}
+#testimonials .carousel-control{width:100%}
+#testimonials .carousel-control-prev,#testimonials .carousel-control-next{bottom:-80px}
+/* ===================================
+    08. Partners
+====================================== */
+.partners-logo{height:160px;display:table;margin:30px 0 0;background-color:#fff;border:1px solid #000}
+.partners-logo figure{display:table-cell;vertical-align:middle}
+/* ===================================
+    09. Contact Form
+====================================== */
+.contact-box{font-size:16px}
+.contact-form{margin:50px 0 0}
+.contact-form ul{float: left;width: 100%;margin: 0;padding: 0}
+.contact-form ul li,.comment-box{float:left;width:48%;margin:0 0 20px;position:relative}
+.contact-form ul li{padding: 0;list-style: none}
+.contact-form ul li:nth-child(2n){float:right}
+.contact-form ul li input,.contact-form ul li select,.comment-box textarea{float:left;color:#666;font-size:14px;width:100%;height:50px;padding:10px;box-shadow:none;background:none;border:1px solid #ddd}
+.comment-box{width:100%;margin:0 0 30px}
+.comment-box textarea{height:230px}
+.contact-form ul li input::-webkit-input-placeholder,.contact-form ul li select::-webkit-input-placeholder,.comment-box textarea::-webkit-input-placeholder{color:#666}
+.contact-form ul li input:-moz-placeholder,.contact-form ul li select:-moz-placeholder,.comment-box textarea:-moz-placeholder{color:#666;opacity:1}
+.contact-form ul li input::-moz-placeholder,.contact-form ul li select::-moz-placeholder,.comment-box textarea::-moz-placeholder{color:#666;opacity:1}
+.contact-form ul li input:-ms-input-placeholder,.contact-form ul li select:-ms-input-placeholder,.comment-box textarea:-ms-input-placeholder{color:#666;color:#666}
+.form-success{color:#19a937;float:left;font-size:16px;font-weight:700;margin:0 0 15px;text-align:left}
+.error{color:#f90303;padding:0 15px}
+/* ===================================
+    10. Support
+====================================== */
+.support{padding:45px 0 35px;background:url(../images/support-bg.jpg) no-repeat center top;background-size:cover}
+.call-us h3{font-size:30px;line-height:36px}
+.call-us h3 span{display:block;font-size:18px;font-family:'Poppins',sans-serif}
+.phone-icon{width:60px;height:60px;line-height:60px;border:1px solid #efaa15}
+.phone-numbers{font-size:30px;padding:0 0 0 25px;line-height:30px}
+.phone-numbers span{display:block;font-size:18px}
+/* ===================================
+    11. Sub Banner
+====================================== */
+.sub-banner-con{padding:82px 0 0;background-position:center top;background-repeat:no-repeat;background-size:cover}
+.sub-banner{height:272px;display:table}
+.sub-banner h2{font-size:42px;margin:0 0 25px}
+.sub-banner > div{display:table-cell;vertical-align:middle}
+.about-banner{background-image:url(../images/about-banner.jpg)}
+/* ===================================
+    12. Breadcrumb
+====================================== */
+.breadcrumb{margin:0;padding:0;font-size:18px;background:none;border-radius:0}
+.breadcrumb > .active{color:#efaa15}
+.breadcrumb li a{color:#fff}
+.breadcrumb > li + li:before{padding:0 5px;color:#fff;content:">";vertical-align:middle}
+/* ===================================
+    13. Custom Style For Other Pages
+====================================== */
+.about-img{margin:0 0 40px}
+.about-box h2{margin:0 0 15px}
+.about-box p{margin:30px 0 0}
+.small-box ul li,.mailing-info{float:left;width:100%;padding:40px 25px;margin:0 0 20px;border:1px solid #efaa15}
+.small-box ul li .smallbox-inner h3{margin:0 0 15px}
+.small-box ul li:last-child{margin:0}
+.carpenters{margin:50px 0 0}
+.carpenters img{width:100%}
+.carpenter-name{float:left;height:94px;padding:22px 0;background-color:#431f09}
+.carpenter-name h3{color:#fff;margin: 0}
+.carpenter-name h3 span{display:block;color:#efaa15;font-size:14px;margin:8px 0 0;font-family:'Poppins',sans-serif}
+.hide-box{top:0;left:0;width:100%;height:100%;display:none;position:absolute;background-color:rgba(67,31,9,0.8)}
+.carpenters:hover .hide-box{display:block}
+.carpenters:hover .carpenter-name{background-color:#efaa15}
+.carpenters:hover .carpenter-name h3,.carpenters:hover .carpenter-name h3 span{color:#431f09}
+.hide-box .social-icons2{height:100%;display:table}
+.hide-box .social-icons2 ul{display:table-cell;vertical-align:middle}
+.hide-box .social-icons2 ul li{float:none;margin:0 8px 0 0;display:inline-block;vertical-align:top}
+.services-banner{background-image:url(../images/services-banner.jpg)}
+.services{margin:50px 0 0}
+.services img{margin:0 0 20px}
+.services h3{margin:0 0 18px}
+.wood-box{background:url(../images/wood-bg.jpg) no-repeat center top;background-size:cover}
+.wood-box h2 span{display:block;font-size:18px;margin:10px 0 0;font-family:'Poppins',sans-serif}
+.wood-box .transparent-btn a{border:2px solid #fff}
+.contact-banner{background-image:url(../images/contact-banner.jpg)}
+.mailing-address{font-size:16px}
+.mailing-address p{margin:0 0 72px}
+.mailing-info{font-size:14px}
+.mailing-info p{margin:0}
+.mailing-info figure{padding:0 0 0 40px}
+.mailing-info .fa{width:65px;height:65px;font-size:30px;line-height:65px}
+.mailing-info{margin:0;padding:40px 0;min-height:154px}
+.mailing-info a{color:#efaa15;text-decoration:none}
+.mailing-info a:hover{color:#431f09}
+.maps{width:100%;height:400px;pointer-events:none}
+.maps iframe{width:100%}
+.btn{display:inline-block;vertical-align:top;width:auto;margin-bottom:10px}
+.form-control{margin-bottom:15px}
+.btn-primary{background-color:#efaa15;border-color:#efaa15}
+.gallery-banner{background-image:url(../images/gallery-banner.jpg)}
+.gallery-box .otw_portfolio_manager-3-3,.gallery-box .otw_portfolio_manager-3-3 img{height:auto!important}
+.gallery-box .otw-row.otw_portfolio_manager-portfolio-items-holder.otw_portfolio_manager-portfolio-newspaper{margin:0 auto!important}

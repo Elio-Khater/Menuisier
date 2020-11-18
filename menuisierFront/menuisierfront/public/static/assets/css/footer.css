@@ -1,0 +1,31 @@
+/* ===================================
+    17. Footer Style
+====================================== */
+.footer-con{background-color:#210f04}
+.copyright{font-size:12px}
+.copyright p{margin:32px 0}
+.social-icons2{float:left;width:100%}
+.social-icons2 ul{margin: 0;padding: 0;list-style: none}
+.social-icons2 ul li{float:left;margin:0 10px 0 0}
+.social-icons2 ul li a{display:block;width:40px;height:40px;color:#efaa15;font-size:16px;text-decoration:none;line-height:40px;border:1px solid #efaa15}
+.social-icons2 ul li:last-child{margin:0}
+.social-icons2 ul li a:hover{color:#fff;background-color:#efaa15}
+.sitemap h3,.contact-info h3{color:#efaa15;margin:0 0 30px}
+.sitemap ul,.contact-info ul{margin: 0;padding: 0;list-style: none}
+.sitemap ul li a{color:#fff;text-decoration:none}
+.sitemap ul li a:hover,.contact-info ul li a{color:#efaa15}
+.contact-info ul li{color:#fff;margin:0 0 5px;position:relative;padding:0 0 0 34px}
+.contact-info ul li .fa{left:0;top:4px;color:#efaa15;font-size:18px;position:absolute}
+/* ===================================
+    17.1 Footer Responsive
+====================================== */
+@media screen and (max-width: 1199px) {
+    .sitemap h3,.copyright .logo,.contact-info h3{margin:20px 0}
+}
+@media screen and (max-width: 767px) {
+    .copyright p{margin:20px 0}
+    .footer-con{text-align:center}
+    .social-icons2 ul li,.social-icons2 ul li:last-child{float:none;margin:0 3px;display:inline-block;vertical-align:top}
+    .sitemap,.contact-info{display:none}
+    .copyright .logo{margin:0 0 20px}
+}

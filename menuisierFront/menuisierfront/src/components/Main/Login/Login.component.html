@@ -1,0 +1,55 @@
+
+<div>
+
+<div class="sub-banner-con text-center about-banner col-xs-12">
+    <div class="container">
+        <div class="sub-banner col-xs-12">
+            <div>
+                <h2 class="white-text robotoslub-font">Login</h2>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Login</li>
+                </ol>
+            </div>
+            <!--sub-banner-->
+        </div>
+        <!--container-->
+    </div>
+    <!--sub-banner-con-->
+</div>
+
+
+<div class="content-box padding-top" xmlns:v-on="http://www.w3.org/1999/xhtml">
+    <div class="container">
+        <div class="padding-bottom contact-box col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="robotoslub-font brown-text">Get a Free Quote</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+            <aside class="contact-form col-xs-12 no-padding">
+                <div id="form_result"></div>
+
+                <ul>
+                    <li>
+                        <input name="username" v-model="Login.username" id="username" type="text" placeholder="Username">
+                    </li>
+
+                    <li>
+                        <input name="password" id="password"  v-model="Login.password" type="password" placeholder="Password">
+                    </li>
+
+                </ul>
+                {{response}}
+                <button class="semibold-font" v-on:click="login" >Login</button>
+
+                <!--contact-form-->
+            </aside>
+            <!--contact-box-->
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 contact-img">
+            <img src="/public/static/assets/images/contact-img.jpg" alt="">
+            <!--col-->
+        </div>
+        <!--container-->
+    </div>
+    <!--content-box-->
+</div>
+</div>

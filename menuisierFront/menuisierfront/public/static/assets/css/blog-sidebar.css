@@ -1,0 +1,54 @@
+/* ===================================
+    20.1 Blog Side Bar
+====================================== */
+.widget{padding:40px 0 0}
+.widget .widget-title{color:#431f09;font-size:24px;line-height:26px;font-family:'Roboto Slab',serif}
+.widget_search,.widget_archive .postform{padding:0;height:50px;border:1px solid #ddd}
+.widget_search .search-form label{margin:0;width:80%;float:left}
+.widget_search .search-field{float:left;width:100%;color:#aaa;padding:15px 10px;border:none;font-weight:400;line-height:20px;box-shadow:none;background:none}
+::-webkit-input-placeholder{color:#aaa}
+:-moz-placeholder{color:#aaa;opacity:1}
+::-moz-placeholder{color:#aaa;opacity:1}
+:-ms-input-placeholder{color:#aaa;color:#aaa}
+.widget_search .search-submit{width:20%;padding:0;height:50px;font-size:18px;line-height:50px;float:right;background:none;border-left:1px solid #ddd}
+.widget_archive .postform{color:#aaa;width:100%;padding:0 0 0 10px}
+.widget_categories .cat-item{line-height:14px;padding:14px 22px;text-align:right;border-bottom:1px solid #ddd;background:url(../images/li-bg.png) no-repeat left 17px}
+.widget_categories .cat-item a{color:#666;float:left;text-align:left;text-decoration:none}
+.widget_categories .cat-item a:hover{color:#efaa15}
+.widget_categories .cat-item:last-child{border:none}
+.widget_categories .cat-item .children{padding:8px 0 0;list-style:none}
+.widget_categories .cat-item .children li{border:none;padding:5px 0 5px 18px;background:url(../images/li-bg2.png) no-repeat left 7px}
+.widget_categories .cat-item .children li a{margin:0 0 4px}
+.widget_recent_comments,.widget_archive,.widget_recent_entries{padding-bottom:40px;border-bottom:1px solid #ddd}
+.widget_recent_comments .recentcomments{padding:10px 0;border-bottom:1px solid #ddd}
+.widget_recent_comments .recentcomments:first-child,.widget_archive ul li:first-child{padding-top:0}
+.widget_recent_comments .recentcomments:last-child,.widget_archive ul li:last-child{border:none}
+.widget_recent_comments .recentcomments a,.widget_archive ul li a:hover{color:#efaa15}
+.widget_archive ul li{padding:14px 0;border-bottom:1px solid #ddd}
+.widget_archive ul li a{color:#666;text-decoration:none}
+.tagcloud a{color:#666;padding:10px;margin:5px;text-decoration:none;line-height:20px;display:inline-block;border:1px solid #ddd}
+.tagcloud a:hover{color:#fff;background:#efaa15;border:1px solid #efaa15}
+.widget_recent_entries ul li{float:left;width:100%;padding:10px 0;border-bottom:1px solid #ddd}
+.widget_recent_entries ul li:first-child{padding-top:0}
+.widget_recent_entries ul li:last-child{border:none}
+.widget_recent_entries ul li > div{padding:0 0 0 15px}
+.widget_recent_entries ul li a{color:#431f09;text-decoration:none}
+.widget_recent_entries ul li a span{display:block}
+/* ===================================
+    20.2 Blog Side Bar Responsive
+====================================== */
+@media screen and (max-width: 1199px) {
+    .widget{padding:20px 0}
+    .widget_search{padding:0}
+    .widget .widget-title{font-size:20px;line-height:22px}
+    .widget_recent_entries ul li > div{padding:0 0 0 10px;width:66%;line-height:18px}
+    .widget_recent_entries ul li a span{margin:8px 0 0}
+    .widget_archive ul li{padding:10px 0}
+    .tagcloud a{margin:2px 0}
+}
+@media screen and (max-width: 991px) {
+    .widget_search{margin:30px 0 0}
+}
+@media screen and (max-width: 767px) {
+    .single-post .blog-image{margin:0 0 20px}
+}

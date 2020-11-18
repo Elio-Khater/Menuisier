@@ -1,0 +1,67 @@
+<div xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<div class="sub-banner-con text-center gallery-banner col-xs-12">
+    <div class="container">
+        <div class="sub-banner col-xs-12">
+            <div>
+                <h2 class="white-text robotoslub-font">Gallery</h2>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                </ol>
+            </div>
+            <!--sub-banner-->
+        </div>
+        <!--container-->
+    </div>
+    <!--sub-banner-con-->
+</div>
+
+<div class="content-box padding-top gallery-box text-center padding-bottom">
+    <div class="container">
+        <h2 class="brown-text robotoslub-font">Our Latest Work</h2>
+        <div class="otw_portfolio_manager-portfolio-newspaper-filter">
+            <ul class="option-set semibold-font otw_portfolio_manager-portfolio-filter clearfix">
+
+                <li v-for="y in Type"><a  v-on:click="getGalleryByType(y.gid)" class="selected"  >{{y.type}}</a></li>
+
+            </ul>
+        </div>
+        <div v-if="Gallery.length>0" class="otw-row otw_portfolio_manager-portfolio-items-holder otw_portfolio_manager-portfolio-newspaper otw_portfolio_manager-mosaic-layout" data-columns="3">
+            
+            <div v-for="x in Gallery" class="otw_portfolio_manager-1-3 otw_portfolio_manager-iso-item height1 otw_portfolio_manager-portfolio-newspaper-item cat3 cat5 cat1">
+                <div class="otw_portfolio_manager-portfolio-full only-media otw_portfolio_manager-hover-effect-1">
+                    <!-- Portfolio Media -->
+                    <figure class="otw_portfolio_manager-portfolio-media otw_portfolio_manager-format-image">
+                        <a href="#"><img v-bind:src="x.url" v-bind:alt="x.info" data-item="media"></a>
+
+                        <!-- Portfolio Overlay -->
+                        <div class="otw_portfolio_manager-portfolio-overlay">
+                            <div class="otw_portfolio_manager-valign-middle">
+                                <!-- Portfolio Icons -->
+                                <div class="otw_portfolio_manager-portfolio-icon-wrapper">
+                                    <a href="#" class="icon-link"><img src="public/assets/images/attached-img.png" alt=""></a>
+                                    <a href="public/assets/images/gallery-img2.jpg" class="otw_portfolio_manager-fancybox-img
+                                         icon-search"><img src="public/assets/images/search-img.png" alt=""></a>
+                                </div>
+                                <!-- End Portfolio Icons -->
+
+                                <!-- Portfolio Title & Info -->
+                                <div class="otw_portfolio_manager-portfolio-text">
+                                    <h3 class="robotoslub-font">Home Renovation<span class="regular-font">WoodArt Work</span></h3>
+                                </div>
+                                <!-- End Portfolio Title & Info -->
+                            </div>
+                        </div>
+                        <!-- End Portfolio Overlay -->
+                    </figure>
+                    <!-- End Portfolio Media -->
+                </div>
+            </div>
+            
+        </div>
+        <div class="transparent-btn inline-display text-uppercase"><a href="#">VIEW ALL PROJECTS</a></div>
+        <!--container-->
+    </div>
+    <!--content-box-->
+</div>
+</div>

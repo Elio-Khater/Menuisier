@@ -1,0 +1,478 @@
+@media screen and (max-width: 1199px) {
+    .banner-text h1 {
+        font-size: 50px;
+    }
+    .design p br,
+    .content-box h2 br{
+        display: none;
+    }
+    .content-box h2 {
+        margin: 0 0 15px;
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .design h3 {
+         margin: 20px 0;
+        font-size: 20px;
+     }
+    #woodart{
+        margin: 40px 0 0;
+    }
+    #testimonials p {
+        margin: 15px 0 0;
+    }
+    #testimonials {
+        margin: 30px 0 0;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .partners-logo{
+        margin: 30px 0 0;
+    }
+    #woodart .item figure img{
+        width: 100%;
+    }
+    .art-textbox{
+        margin: 0;
+    }
+    .art-textbox h3 {
+        font-size: 25px;
+        margin: 0 0 20px;
+    }
+    .otw_portfolio_manager-portfolio-text h3 {
+        font-size: 24px;
+    }
+    .otw_portfolio_manager-portfolio-text h3 span{
+        font-size: 14px;
+    }
+    .contact-form {
+        margin: 30px 0 0;
+    }
+    .contact-img{
+        display: none;
+    }
+    /****************ABOUT*************/
+    .about-img {
+        margin: 0;
+    }
+    .about-box{
+        margin: 0 0 40px;
+    }
+    .small-box ul li{
+        width: 49%;
+    }
+    .small-box ul li:last-child{
+        float: right;
+    }
+    .small-box ul li .smallbox-inner p{
+        min-height: 72px;
+    }
+    /***************CONTACT*****************/
+    .mailing-info{
+        padding: 20px 0;
+        text-align: center;
+    }
+    .mailing-address p {
+        margin: 0 0 30px;
+    }
+    .mailing-info figure {
+        padding: 0;
+        margin: 0 auto 10px;
+        float: none !important;
+    }
+    .mailing-info .smallbox-inner p{
+        margin: 0;
+        min-height: 72px;
+    }
+    .maps,.maps iframe{
+        height: 300px;
+    }
+    /****************SERVICES**************/
+    .services {
+        margin: 20px 0 0;
+    }
+    .price-table button{
+        padding: 15px 6px;
+    }
+    .pakage_price span.numeric{
+        font-size: 52px;
+    }
+    #bannerSlider  .left.carousel-control,
+    #bannerSlider  .right.carousel-control{
+        width: 36px;
+        height: 36px;
+    }
+    #bannerSlider  .left.carousel-control{
+        left: 2px;
+    }
+    #bannerSlider  .right.carousel-control{
+        right: 2px;
+    }
+    #bannerSlider .carousel-control .sr-only{
+        line-height: 36px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .content-box h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .design h3 {
+        margin: 12px 0;
+        font-size: 18px;
+    }
+    .design {
+        font-size: 14px;
+    }
+    .design .transparent-btn {
+        margin: 30px 0 0;
+    }
+    .banner-text h1 {
+        font-size: 44px;
+    }
+    .banner-text h3 {
+        font-size: 20px;
+        margin: 0 0 16px;
+    }
+    .banner-text p {
+        margin: 20px 0 30px;
+    }
+    .services-box{
+        margin: 10px 0;
+        padding: 30px 0;
+    }
+    #woodart {
+        margin: 30px 0 0;
+    }
+    .art-textbox {
+        margin: 20px 0 0;
+    }
+    #woodart .carousel-control-prev, #testimonials .carousel-control-prev{
+        left: 15px;
+        right: 0;
+        bottom: 0;
+    }
+    #woodart .carousel-control-next, #testimonials .carousel-control-next{
+        bottom: 0;
+        left: 75px;
+    }
+    #woodart .carousel-control, #testimonials .carousel-control{
+        width: 100%;
+        padding: 60px 0 0;
+    }
+    .faq-con{
+        text-align: center;
+    }
+    .skill-level{
+        margin: 20px 0 0;
+    }
+    .partners h2,.happy-clients{
+        text-align: center;
+    }
+    .call-us h3{
+        font-size: 26px;
+    }
+    /****************ABOUT*************/
+    .small-box ul li{
+        padding: 25px 10px;
+        text-align: center;
+    }
+    .small-box ul li .smallbox-inner h3{
+        margin: 15px 0 5px;
+    }
+    .about-box h3{
+        font-size: 18px;
+    }
+    .about-box p {
+        margin: 20px 0 0;
+    }
+}
+@media screen and (max-width: 767px){
+    .otw_portfolio_manager-portfolio-newspaper-filter,
+    .otw_portfolio_manager-portfolio-newspaper-sort{
+        margin: 24px 0 26px;
+    }
+    .partners-logo {
+        margin: 20px 0 0;
+    }
+    .client-name{
+        font-size: 24px;
+    }
+    .support{
+        padding: 35px 0;
+        text-align: center;
+    }
+    .call-us{
+        margin: 0 0 20px;
+    }
+    .phone{
+        text-align: center;
+    }
+    .phone-icon,.phone-numbers{
+        float: none !important;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .phone-numbers{
+        text-align: left;
+        padding: 0 0 0 5px;
+    }
+    .banner-text p br{
+        display: none;
+    }
+    .carpenters {
+        margin: 20px 0 0;
+    }
+    /*****************CONTACT**************/
+    .mailing-info{
+        margin: 5px 0 ;
+    }
+    .mailing-address{
+        font-size: 13px;
+    }
+    .mailing-address p {
+         margin: 0 0 20px;
+     }
+    .mailing-info .smallbox-inner p{
+        min-height: auto;
+    }
+    .sub-banner{
+        height: 182px;
+    }
+    .sub-banner h2{
+        font-size: 32px;
+    }
+    .otw_portfolio_manager-portfolio-full{
+        text-align: center;
+    }
+    .animation-box{
+        text-align: center;
+    }
+    .animation-box p{
+        margin: 10px 0;
+    }
+    .animation-box .img-responsive{
+        margin: 0 auto;
+    }
+    .title{
+        margin: 0;
+        padding:20px 0;
+    }
+
+    .title{
+        border: none;
+    }
+    .otw_portfolio_manager-accordion.ui-accordion.ui-widget.ui-helper-reset{
+        margin: 0 0 15px;
+    }
+    .otw_portfolio_manager-project-info-box-content{
+        width: 100%;
+    }
+    .otw_portfolio-manager-share-button-boxy{
+        display: inline-block;
+        float: none;
+    }
+    }
+@media screen and (max-width: 667px) {
+.padding-top {
+     padding-top: 34px;
+}
+.padding-bottom {
+     padding-bottom: 34px;
+}
+    #accordion .panel-body{
+        font-size: 13px;
+        padding: 16px;
+    }
+    .otw_portfolio_manager-portfolio-newspaper-filter a,
+    .otw_portfolio_manager-portfolio-newspaper-sort a{
+        font-size: 13px;
+        padding: 0 6px;
+    }
+    .banner-text{
+        font-size: 16px;
+    }
+    .banner-text h1 {
+        font-size: 40px;
+    }
+    .design{
+        font-size: 13px;
+    }
+    body, select, input{
+        line-height: 22px;
+    }
+    .otw_portfolio_manager-portfolio-text h3 {
+        font-size: 20px;
+    }
+    #testimonials .carousel-control {
+        padding: 80px 0 0;
+    }
+    #testimonials .carousel-control-prev,
+    #testimonials .carousel-control-next{
+        bottom: 15px;
+    }
+    .small-box ul li{
+        width: 100%;
+    }
+    .small-box ul li .smallbox-inner p{
+        min-height: auto;
+    }
+    .gallery-box .otw_portfolio_manager-3-3,
+    .gallery-box .otw_portfolio_manager-3-3 .otw_portfolio_manager-portfolio-media a img {
+        height: 240px !important;
+    }
+    .gallery-box .otw_portfolio_manager-3-3 .otw_portfolio_manager-portfolio-icon-wrapper .icon-link img,
+    .gallery-box .otw_portfolio_manager-3-3 .otw_portfolio_manager-fancybox-img.icon-search img{
+        height: auto !important;
+    }
+}
+@media screen and (max-width: 600px) {
+    .banner-text h1 {
+        font-size: 32px;
+    }
+    .content-box h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .services-box p {
+        margin: 15px 0 20px;
+    }
+    .skill-level,
+    .call-us h3 span{
+        font-size: 15px;
+    }
+    .skill-level .numeric {
+        font-size: 30px;
+        line-height: 30px;
+        margin: 0 0 10px;
+    }
+    .contact-form ul li, .comment-box{
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .comment-box textarea {
+        height: 170px;
+    }
+    .phone-numbers{
+        font-size: 26px;
+    }
+    .client-name {
+        font-size: 20px;
+    }
+    /*******************SERVICES***************/
+    .wood-box h2 span{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .otw_portfolio_manager-portfolio-newspaper-filter li,
+    .otw_portfolio_manager-portfolio-newspaper-sort li {
+        width: 32%;
+        text-align: center;
+    }
+    .art-textbox,
+    .call-us h3{
+        line-height: 22px;
+ }
+    #accordion .panel-title a{
+        font-size: 15px;
+        line-height: 15px;
+        padding: 10px 20px;
+}
+    .skill-level{
+        height: 140px;
+    }
+    .call-us h3 span{
+        margin: 10px 0 0;
+    }
+    .contact-box,
+    .banner-text{
+        font-size: 14px;
+    }
+    .banner-text h1 {
+        font-size: 24px;
+    }
+    .banner-text h3,
+    .design h3{
+        font-size: 16px;
+    }
+    .content-box h2{
+        font-size: 22px;
+    }
+    .services-box{
+        padding: 20px 10px;
+    }
+    .services-box p br{
+        display: none;
+    }
+    .art-textbox h3 {
+        font-size: 22px;
+        margin: 0 0 15px;
+    }
+    .skill-level{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #testimonials{
+        text-align: center;
+        margin: 20px 0 0 ;
+        font-size: 13px;
+        line-height: 22px;
+    }
+    #testimonials figure{
+        float:none !important;
+    }
+    .client-name{
+        padding: 10px 0 0;
+        height: auto;
+        width: 100%;
+    }
+    #testimonials .carousel-control {
+        padding: 72px 0 0;
+    }
+    #testimonials .carousel-control-prev,
+    #testimonials .carousel-control-next{
+        left: -48px;
+        right: 0;
+        margin: 0 auto;
+    }
+    #testimonials .carousel-control-next{
+        left: 48px;
+    }
+    .carpenters {
+        margin: 10px 0 0;
+    }
+    .about-img img{
+        width: 87%
+    }
+    .about-box h3 {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 414px){
+.services img{
+    width: 100%;
+}
+    .services .separator img{
+        width: auto;
+
+    }
+}
+@media screen and (max-width: 375px) {
+    .partners-logo {
+        padding: 0;
+    }
+    .sub-banner h2 {
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

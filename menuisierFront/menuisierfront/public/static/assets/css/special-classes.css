@@ -1,0 +1,22 @@
+/* ===================================
+    Special Classes
+====================================== */
+.bold-font{font-weight:700}
+.semibold-font{font-weight:500}
+.regular-font{font-weight:400}
+.light-font{font-weight:300}
+.gold-text{color:#efaa15}
+.gold-bg{background-color:#efaa15}
+.brown-text{color:#431f09}
+.white-text{color:#fff!important}
+.robotoslub-font{font-family:'Roboto Slab',serif}
+.padding-top{padding-top:98px}
+.padding-bottom{padding-bottom:98px}
+.inline-display{float:none!important;display:inline-block;vertical-align:top}
+.no-padding{padding:0}
+.no-margin-btm{margin-bottom:0}
+.spacer{height:30px}
+@media screen and (max-width: 1199px) {
+    .padding-top{padding-top:48px}
+    .padding-bottom{padding-bottom:48px}
+}

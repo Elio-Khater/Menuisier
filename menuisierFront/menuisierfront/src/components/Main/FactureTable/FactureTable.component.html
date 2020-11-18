@@ -1,0 +1,71 @@
+<div class="content-box padding-top" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+    <div class="container">
+        <div class="padding-bottom contact-box col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="robotoslub-font brown-text">Create Facture</h2>
+            <p>Hello Imad, here you can create a facture.</p>
+            <aside class="contact-form col-xs-12 no-padding">
+                <div id="form_result"></div>
+
+                <ul>
+                    <li>
+                        <h1>عماد خاطر</h1>
+                    </li>
+                    <li>
+                        <h1 style="float:right">عرض أسعار</h1>
+                    </li>
+                    <li>
+                        <h1></h1>
+
+                    </li>
+                    <li>
+                        <h3>إلى</h3>
+                        <textarea rows="4" style="width:100%"></textarea>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <table id="my-table" class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>المجموع</th>
+                                    <th>السعر</th>
+                                    <th>العدد</th>
+                                    <th>الوصف</th>
+                                    <th>الغرض</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="factureRow">
+                                <tr v-for="i in increment">
+                                    <td>{{getTotal(i)}}</td>
+                                    <td>
+                                        <input type="number" style="text-align: center" v-model="Price[i]" id="price1" />
+                                    </td>
+                                    <td>
+                                        <input type="number" style="text-align: center" v-model="Count[i]" id="count1" />
+                                    </td>
+                                    <td>
+                                        <input type="text" v-bind:id="'description'+i" />
+                                    </td>
+                                    <td>
+                                        <input type="text" v-bind:id="'item'+i" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <button class="semibold-font" v-on:click="increment+=1" v-bind:onclick="'AddRow('+increment+')'"><b> إضافة غرض    </b>
+                </button><br>
+                <button class="semibold-font" onclick="pdf()">save</button>
+
+                <!--contact-form-->
+            </aside>
+            <!--contact-box-->
+        </div>
+
+        <!--container-->
+    </div>
+    <!--content-box-->
+
+</div>
